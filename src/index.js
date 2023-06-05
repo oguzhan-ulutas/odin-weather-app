@@ -1,7 +1,4 @@
 import './style.css';
+import { getWeather } from './get-weather';
 
-const trial = () => {
-  console.log('helöö');
-};
-
-trial();
+getWeather('Konya');
