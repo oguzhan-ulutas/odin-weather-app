@@ -1,3 +1,7 @@
 import './style.css';
 
-console.log('helöö');
+const trial = () => {
+  console.log('helöö');
+};
+
+trial();
