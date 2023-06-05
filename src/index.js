@@ -1,4 +1,5 @@
 import './style.css';
-import { getWeather } from './get-weather';
+import { weatherInfo, getSearchLocation } from './search';
 
-getWeather('Konya');
+getSearchLocation();
+console.log(weatherInfo);
