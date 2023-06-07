@@ -17,12 +17,13 @@ addValue(input, 'istanbul');
 appendElement(form, input, button);
 
 let location = 'istanbul';
+export let weatherInfo = await getWeather(location);
 
 export function getSearchLocation() {
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
     location = event.target[0].value;
+    weatherInfo = await getWeather(location);
+    console.log(weatherInfo);
   });
 }
-
-export const weatherInfo = getWeather(location);

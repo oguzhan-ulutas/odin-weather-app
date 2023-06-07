@@ -1,6 +1,8 @@
 import './style.css';
 import { weatherInfo, getSearchLocation } from './modules/search';
-import domManipulator from './modules/dom-manipulator';
+import mainPageCreator from './modules/main-page-creator';
 
-domManipulator();
-// getSearchLocation();
+mainPageCreator();
+
+// Adds event listener to form and updates the location variable in search module
+getSearchLocation();

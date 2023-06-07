@@ -6,6 +6,8 @@
 
 body {
   margin: 0px;
+  background-image: url('./img/iccup-xNtwmcRP-gw-unsplash.jpg');
+  background-size: cover;
 }
 
 #content {
@@ -14,4 +16,12 @@ body {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   margin: 0px;
   padding: 0px;
+
+  display: grid;
+  grid-template-rows: 1fr 1rem;
+}
+
+.footer {
+  text-align: center;
+  font-weight: 500;
 }
