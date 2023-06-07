@@ -75,3 +75,8 @@ export function addValue(element, valueAttribute) {
 export function removeClass(element, elementClass) {
   element.classList.remove(elementClass);
 }
+
+// Adds href to an link element
+export function addHref(element, href) {
+  element.href = href;
+}

@@ -1,3 +1,17 @@
+:root {
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  background-color: blueviolet;
+  margin: 0px;
+}
+
+#content {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }

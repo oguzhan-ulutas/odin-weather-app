@@ -8,7 +8,7 @@ import {
 } from './building-blocks';
 
 // Creating search form
-const form = newElementCreator('form');
+export const form = newElementCreator('form');
 const input = newElementCreator('input');
 const button = newElementCreator('button');
 addPlaceholder(input, 'Search a location');
@@ -16,7 +16,7 @@ addContent(button, 'Search');
 addValue(input, 'istanbul');
 appendElement(form, input, button);
 
-let location = '';
+let location = 'istanbul';
 
 export function getSearchLocation() {
   form.addEventListener('submit', (event) => {
