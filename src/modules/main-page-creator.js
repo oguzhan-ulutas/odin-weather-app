@@ -4,16 +4,6 @@ import {
   addClass,
   addContent,
   appendElement,
-  addSrc,
-  addAlt,
-  addTitle,
-  addId,
-  addType,
-  addName,
-  addPlaceholder,
-  isRequired,
-  addValue,
-  removeClass,
   addHref,
 } from './building-blocks';
 import { form, weatherInfo } from './search';

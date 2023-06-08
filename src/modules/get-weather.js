@@ -47,13 +47,17 @@ const WeatherParser = (weather) => {
 
 // Getting weather from weather api
 export default async function getWeather(location) {
-  const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=6cad553ab03344ef8ad120819230406&q=${location.toLowerCase()}`,
-    {
-      mode: 'cors',
-    },
-  );
-  const weather = await response.json();
+  try {
+    const response = await fetch(
+      `https://api.weatherapi.com/v1/current.json?key=6cad553ab03344ef8ad120819230406&q=${location.toLowerCase()}`,
+      {
+        mode: 'cors',
+      },
+    );
+    const weather = await response.json();
 
-  return WeatherParser(weather);
+    return WeatherParser(weather);
+  } catch {
+    alert('Server is busy, please try again later');
+  }
 }

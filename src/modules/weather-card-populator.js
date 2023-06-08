@@ -1,23 +1,6 @@
 import { weatherCard } from './main-page-creator';
 import { weatherInfo } from './search';
-import {
-  elementSelector,
-  newElementCreator,
-  addClass,
-  addContent,
-  appendElement,
-  addSrc,
-  addAlt,
-  addTitle,
-  addId,
-  addType,
-  addName,
-  addPlaceholder,
-  isRequired,
-  addValue,
-  removeClass,
-  addHref,
-} from './building-blocks';
+import { newElementCreator, addClass, addContent, appendElement } from './building-blocks';
 
 const weatherCardHeader = newElementCreator('div');
 addClass(weatherCardHeader, 'weather-card-header');
@@ -44,7 +27,7 @@ function addWeatherCardContent(weatherObject) {
   addContent(condition, weatherObject.condition);
   addContent(name, `${weatherObject.name}, ${weatherObject.country}`);
   addContent(date, `${weatherObject.dateFormatted} ${weatherObject.hour}`);
-  addContent(temperature, `${weatherObject.temp_c}⁰ C`);
+  addContent(temperature, `${weatherObject.temp_c}⁰`);
   addContent(feelsLike, `Feels Like: ${weatherObject.feelslike_c}⁰ C`);
   addContent(visibility, `Visibility: ${weatherObject.vis_km} km`);
   addContent(humidity, `Humidity: ${weatherObject.humidity}%`);
