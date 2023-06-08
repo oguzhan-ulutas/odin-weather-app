@@ -1,6 +1,6 @@
 # odin-weather-app
 
-[The Odin Project exercise](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) to learn about asynchronous way of working of JavaScript
+[The Odin Project exercise](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) exercise to learn about the asynchronous way of working of the JavaScript
 
 [Live Preview](https://oguzhan-ulutas.github.io/odin-weather-app/)
 
