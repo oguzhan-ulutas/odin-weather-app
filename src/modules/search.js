@@ -6,6 +6,7 @@ import {
   appendElement,
   addValue,
 } from './building-blocks';
+import weatherCardPopulator from './weather-card-populator';
 
 // Creating search form
 export const form = newElementCreator('form');
@@ -24,6 +25,7 @@ export function getSearchLocation() {
     event.preventDefault();
     location = event.target[0].value;
     weatherInfo = await getWeather(location);
+    weatherCardPopulator();
     console.log(weatherInfo);
   });
 }

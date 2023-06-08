@@ -16,7 +16,7 @@ import {
   removeClass,
   addHref,
 } from './building-blocks';
-import { form } from './search';
+import { form, weatherInfo } from './search';
 
 // Selecting main content div in the html
 const content = elementSelector('#content');
@@ -37,7 +37,7 @@ addHref(githubLink, 'https://github.com/oguzhan-ulutas');
 appendElement(footer, githubLink);
 
 // Creating weather info holder card
-const weatherCard = newElementCreator('div');
+export const weatherCard = newElementCreator('div');
 addClass(weatherCard, 'weather-card');
 
 export default function mainPageCreator() {

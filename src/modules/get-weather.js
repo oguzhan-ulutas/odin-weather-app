@@ -1,3 +1,5 @@
+import format from 'date-fns/format';
+
 // Adjusting retrieved data according to apps need.
 const WeatherParser = (weather) => {
   const { name, country, localtime } = weather.location;
@@ -17,11 +19,15 @@ const WeatherParser = (weather) => {
     vis_miles,
   } = weather.current;
 
+  const hour = localtime.slice(-5);
+  const date = localtime.slice(0, 10);
+  const dateFormatted = format(new Date(date), 'dd/MMM/yy');
+  const lastUpdated = last_updated.slice(-5);
+
   return {
     name,
     country,
-    localtime,
-    last_updated,
+    lastUpdated,
     temp_c,
     temp_f,
     is_day,
@@ -34,6 +40,8 @@ const WeatherParser = (weather) => {
     feelslike_f,
     vis_km,
     vis_miles,
+    hour,
+    dateFormatted,
   };
 };
 
